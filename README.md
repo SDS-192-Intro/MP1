@@ -38,7 +38,7 @@ In this mini-project, you will create at least two data visualizations of variab
 
 ## Import and prepare data
 
-7. On line 40 of scorecard_analysis.Rmd, add the list of variable names (from column 6 in the data dictionary) as additional arguments to the `sc_select()` function. *Note that you should supply these names in lowercase.* Run the code chunk. 
+7. On line 40 of `scorecard_analysis.Rmd`, add the list of variable names (from column 6 in the data dictionary) as additional arguments to the `sc_select()` function. *Note that you should supply these names in lowercase.* Run the code chunk. 
 8. Check out the data frame, and note columns with many missing values. If the values are missing in more than 25% of rows, return to the data dictionary and select new columns. Re-run the code. 
 9. Factor your ordinal variable in the code chunk starting at line 44, using the `factor()` function. The `levels` you should supply as an argument will be listed in the `VALUES` column in the data dictionary, and the associated `labels` you should supply as an argument will be listed in the `LABELS` column of the data dictionary. I provided an example in the comments. Be sure to reference the help pages for the `factor()` function if you have questions!
 
@@ -60,7 +60,7 @@ In this mini-project, you will create at least two data visualizations of variab
     
 ## Record standards and submit assignment
 
-12. Open `standards.Rmd`, and under each heading, indicate how the work you completed for this project demonstrated fluency in that standard. 
+12. Open `standards.Rmd`, and under each heading, indicate how the work you completed for this project demonstrated fluency in that standard. Just 1-2 sentences per standard!
 13. When you are done, you should save both .Rmd files, knit the documents, commit changes, and then push changes back to GitHub. That's it for submission. You don't need to submit anything on Moodle. 
 
 # Evaluation 
