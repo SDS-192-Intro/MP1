@@ -2,23 +2,31 @@
 
 # Overview
 
-In this mini-project, you will create at least two data visualizations of variables in the General Social Survey and then write up your findings in a short blog post (400-500 words). The computational components of this assignment will involve selecting a survey of interest to your group, downloading the data, loading it into `R`, reviewing the data documentation, and then producing your plots. In your blot post, you will detail how the data in this dataset was produced, along with what we learn by reviewing the plots. 
+In this mini-project, you will create at least two data visualizations of variables in the [College Scorecard](https://collegescorecard.ed.gov/) dataset and then write up your findings in a short blog post (400-500 words). You will study the data documentation, review the data dictionary to select variables for your analysis, and then finally produce your plots. In your blot post, you will detail how the data in this dataset was produced, along with what we learn by reviewing the plots. 
+
+# Learning Goals
+
+* Navigate different forms of data documentation
+* Recognize differences in variable types and how they get assigned to `R` data objects 
+* Examine variation in and co-variation between data variables through exploratory plotting in `R`
+* Communicate data findings in writing and effective data graphics
+* Evaluate the ethical dimensions of data resources
 
 # Detailed Instructions
 
 ## Set up your environment
 
-1. In RStudio, `File` > `New Project` > `Version Control` > `Git` and then copy the URL to this repo. Open scorecard_analysis.Rmd and add your group member's names to the header (lines 5, 7, and 9). 
+1. In RStudio, `File` > `New Project` > `Version Control` > `Git` and then copy the URL to this repo. Open `scorecard_analysis.Rmd` and add your group member's names to the header (lines 5, 7, and 9). 
 2. Install the `rscorecard` package by entering the following in your console: 
 
 `install.packages("rscorecard")`
 
-3. Navigate [here](https://api.data.gov/signup/) to sign up for an API key through Data.gov. After you enter your name and email, the API key will be emailed to you. Copy this API key into line 33 of scorecard_analysis.Rmd. Run that code chunk. 
+3. Navigate [here](https://api.data.gov/signup/) to sign up for an API key through Data.gov. After you enter your name and email, the API key will be emailed to you. Copy this API key into line 33 of `scorecard_analysis.Rmd`. Run that code chunk. 
 
 ## Get to know the scorecard data
 
 4. Download **both** the Scorecard Data Dictionary and the Institution-Level Technical Documentation [here](https://collegescorecard.ed.gov/data/documentation/). Read pages 2-3 of the Technical Documentation to learn more about this dataset. 
-5. Open the Data Dictionary in Excel and select the tab for `Institution_Data_Dictionary`. There are thousands of variables in this dataset, falling into the broader categories of school, completion, admissions, cost, etc. Note how the file is organized, and specifically draw your attention to:
+5. Open the Data Dictionary in Excel and select the tab for Institution_Data_Dictionary. There are thousands of variables in this dataset, falling into the broader categories of school, completion, admissions, cost, etc. Note how the file is organized, and specifically draw your attention to:
   * Column 1 (NAME OF DATA ELEMENT): This is a long description of the variable and gives you clues as to what is represented in it. 
   * Column 2 (dev-category): This is the broad category the variable falls into.
   * Column 6 (VARIABLE NAME): This is the column name for the variable. This is how you will reference the variable in `R`. 
@@ -26,7 +34,7 @@ In this mini-project, you will create at least two data visualizations of variab
   * Column 8 (LABEL): These are the labels associated with the values recorded for the variable. 
   * Column 11 (NOTES): This provides notes about the variable, including whether it is currently in use and what missing values indicate. 
 
-6. In addition to 'unitid' and 'instnm', select five more variables from the data dictionary that you'd like to work with in your analysis. We're only going to be looking at MA schools, so you can leave variables that record the state and region of the institution off of your list. Select at least one numeric variable, and at least one ordinal variable. Read up on these variable in the Technical Documentation (Command/Control + F to find the variable name in the PDF.)
+6. In addition to `unitid` and `instnm`, select five more variables from the data dictionary that you'd like to work with in your analysis. We're only going to be looking at MA schools, so you can leave variables that record the state and region of the institution off of your list. *Select at least one numeric variable, and at least one ordinal variable.* Read up on these selected variables in the Technical Documentation (Command/Control + F to find the variable name in the PDF.)
 
 ## Import and prepare data
 
@@ -52,7 +60,7 @@ In this mini-project, you will create at least two data visualizations of variab
     
 ## Record standards and submit assignment
 
-12. Open standards.Rmd, and under each heading, indicate how the work you completed for this project demonstrated fluency in that standard. 
+12. Open `standards.Rmd`, and under each heading, indicate how the work you completed for this project demonstrated fluency in that standard. 
 13. When you are done, you should save both .Rmd files, knit the documents, commit changes, and then push changes back to GitHub. That's it for submission. You don't need to submit anything on Moodle. 
 
 # Evaluation 
