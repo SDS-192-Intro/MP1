@@ -16,12 +16,12 @@ In this mini-project, you will create at least four data visualizations of varia
 
 ## Set up your environment
 
-1. In RStudio, `File` > `New Project` > `Version Control` > `Git` and then copy the URL to this repo. Open `scorecard_analysis.Rmd` and add your group member's names to the header (lines 5, 7, and 9). 
+1. In RStudio, `File` > `New Project` > `Version Control` > `Git` and then copy the URL to this repo. Open `scorecard_analysis.qmd` and add your group member's names to the header (lines 5, 7, and 9). 
 2. Install the `rscorecard` package by entering the following in your console: 
 
 `install.packages("rscorecard")`
 
-3. Navigate [here](https://api.data.gov/signup/) to sign up for an API key through Data.gov. After you enter your name and email, the API key will be emailed to you. Copy this API key into line 33 of `scorecard_analysis.Rmd`. Run that code chunk. 
+3. Navigate [here](https://api.data.gov/signup/) to sign up for an API key through Data.gov. After you enter your name and email, the API key will be emailed to you. Copy this API key into line 33 of `scorecard_analysis.qmd`. Run that code chunk. 
 
 ## Get to know the scorecard data
 
@@ -38,7 +38,7 @@ In this mini-project, you will create at least four data visualizations of varia
 
 ## Import and prepare data
 
-7. On line 40 of `scorecard_analysis.Rmd`, add the list of variable names (from column 6 in the data dictionary) as additional arguments to the `sc_select()` function. *Note that you should supply these names in lowercase.* Run the code chunk. 
+7. On line 40 of `scorecard_analysis.qmd`, add the list of variable names (from column 6 in the data dictionary) as additional arguments to the `sc_select()` function. *Note that you should supply these names in lowercase.* Run the code chunk. 
 8. Check out the data frame, and note columns with many missing values. If the values are missing in more than 25% of rows, return to the data dictionary and select new columns. Re-run the code. 
 9. Factor your ordinal variable in the code chunk starting at line 44, using the `factor()` function. The `levels` you should supply as an argument will be listed in the `VALUES` column in the data dictionary, and the associated `labels` you should supply as an argument will be listed in the `LABELS` column of the data dictionary. I provided an example in the comments. Be sure to reference the help pages for the `factor()` function if you have questions!
 
@@ -57,7 +57,8 @@ In this mini-project, you will create at least four data visualizations of varia
     * What assumptions and commitments informed the design of this dataset?
     * Who has had a say in data collection and analysis regarding this dataset? Who has been excluded?
     * What are the benefits and harms of this dataset, and how are they distributed amongst diverse social groups?
-12. When you are done, you should save both .Rmd files, knit the documents, commit changes, and then push changes back to GitHub. That's it for submission. You don't need to submit anything on Moodle. 
+12. Open `contributions.qmd` and briefly describe each team member's contributions to the project. 
+13. When you are done, you should save all .qmd files, render the documents, commit changes, and then push changes back to GitHub. That's it for submission. You don't need to submit anything on Moodle. 
 
 # Evaluation 
 
