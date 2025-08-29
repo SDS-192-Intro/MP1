@@ -2,7 +2,7 @@
 
 # Overview
 
-In this mini-project, you will create at least two data visualizations of variables in the [College Scorecard](https://collegescorecard.ed.gov/) dataset and then write up your findings in a short blog post (400-500 words). You will study the data documentation, review the data dictionary to select variables for your analysis, and then finally produce your plots. In your blot post, you will detail how the data in this dataset was produced, along with what we learn by reviewing the plots. 
+In this mini-project, you will create at least four data visualizations of variables in the [College Scorecard](https://collegescorecard.ed.gov/) dataset and then write up your findings in a short blog post (400-500 words). You will study the data documentation, review the data dictionary to select variables for your analysis, and then finally produce your plots. In your blot post, you will detail how the data in this dataset was produced, along with what we learn by reviewing the plots. 
 
 # Learning Goals
 
@@ -25,7 +25,7 @@ In this mini-project, you will create at least two data visualizations of variab
 
 ## Get to know the scorecard data
 
-4. Download **both** the Scorecard Data Dictionary and the Institution-Level Technical Documentation [here](https://collegescorecard.ed.gov/data/documentation/). Read pages 2-3 of the Technical Documentation to learn more about this dataset. 
+4. Download **both** the Scorecard Data Dictionary and the Institution-Level Technical Documentation [here](https://collegescorecard.ed.gov/data/data-documentation). Read pages 2-3 of the Technical Documentation to learn more about this dataset. 
 5. Open the Data Dictionary in Excel and select the tab for Institution_Data_Dictionary. There are thousands of variables in this dataset, falling into the broader categories of school, completion, admissions, cost, etc. Note how the file is organized, and specifically draw your attention to:
   * Column 1 (NAME OF DATA ELEMENT): This is a long description of the variable and gives you clues as to what is represented in it. 
   * Column 2 (dev-category): This is the broad category the variable falls into.
@@ -42,9 +42,9 @@ In this mini-project, you will create at least two data visualizations of variab
 8. Check out the data frame, and note columns with many missing values. If the values are missing in more than 25% of rows, return to the data dictionary and select new columns. Re-run the code. 
 9. Factor your ordinal variable in the code chunk starting at line 44, using the `factor()` function. The `levels` you should supply as an argument will be listed in the `VALUES` column in the data dictionary, and the associated `labels` you should supply as an argument will be listed in the `LABELS` column of the data dictionary. I provided an example in the comments. Be sure to reference the help pages for the `factor()` function if you have questions!
 
-## Design two data visualizations
+## Design four data visualizations
 
-10. Create two data visualizations showcasing the survey findings - one univariate plot and one plot adding an additional variable to your previous univariate plot. Be sure to label your plots and consider the plot aesthetics.
+10. Create four data visualizations showcasing the survey findings - at least one univariate plot and at least one plot adding an additional variable to your previous univariate plot. Be sure to label your plots and consider the plot aesthetics.
 
 ## Write blog post
 
@@ -57,11 +57,7 @@ In this mini-project, you will create at least two data visualizations of variab
     * What assumptions and commitments informed the design of this dataset?
     * Who has had a say in data collection and analysis regarding this dataset? Who has been excluded?
     * What are the benefits and harms of this dataset, and how are they distributed amongst diverse social groups?
-    
-## Record standards and submit assignment
-
-12. Open `standards.Rmd`, and under each heading, indicate how the work you completed for this project demonstrated fluency in that standard. Just 1-2 sentences per standard!
-13. When you are done, you should save both .Rmd files, knit the documents, commit changes, and then push changes back to GitHub. That's it for submission. You don't need to submit anything on Moodle. 
+12. When you are done, you should save both .Rmd files, knit the documents, commit changes, and then push changes back to GitHub. That's it for submission. You don't need to submit anything on Moodle. 
 
 # Evaluation 
 
@@ -88,7 +84,6 @@ You will be evaluated on the extent to which your mini-project demonstrates flue
 * Multivariate Plotting
   * Have you produced at least one plot visualizing the values in two variables in the dataset?
   * Have you detailed at least one quantitative finding, and at least one interpretation of that finding in the blog post?
-* Error Resolution and Problem-Solving
-  * Do you describe at least one challenge that you faced in completing the computational portions of the assignmemt and how you solved it in standards.Rmd?
+
   
 
