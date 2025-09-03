@@ -2,7 +2,7 @@
 
 # Overview
 
-In this mini-project, you will create at least four data visualizations of variables in the [College Scorecard](https://collegescorecard.ed.gov/) dataset and then write up your findings in a short blog post (400-500 words). You will study the data documentation, review the data dictionary to select variables for your analysis, and then finally produce your plots. In your blot post, you will detail how the data in this dataset was produced, along with what we learn by reviewing the plots. 
+In this mini-project, you will create at least three data visualizations of variables in the [College Scorecard](https://collegescorecard.ed.gov/) dataset and then write up your findings in a short blog post (400-500 words). You will study the data documentation, review the data dictionary to select variables for your analysis, and then finally produce your plots. In your blog post, you will detail how the data in this dataset was produced, along with what we learn by reviewing the plots. 
 
 # Learning Goals
 
@@ -34,25 +34,25 @@ In this mini-project, you will create at least four data visualizations of varia
   * Column 8 (LABEL): These are the labels associated with the values recorded for the variable. 
   * Column 11 (NOTES): This provides notes about the variable, including whether it is currently in use and what missing values indicate. 
 
-6. In addition to `unitid` and `instnm`, select five more variables from the data dictionary that you'd like to work with in your analysis. We're only going to be looking at MA schools, so you can leave variables that record the state and region of the institution off of your list. *Select at least one numeric variable, and at least one ordinal variable.* Read up on these selected variables in the Technical Documentation (Command/Control + F to find the variable name in the PDF.)
+6. In addition to `unitid` and `instnm`, select five more variables from the data dictionary that you'd like to work with in your analysis. *Select at least one numeric variable, and at least one ordinal variable.* Read up on these selected variables in the Technical Documentation (Command/Control + F to find the variable name in the PDF.) Some of the variables have been discontinued in the latest release of the data. Check the NOTES column of the data dictionary to make sure the variables you have selected have note been discontinued. 
 
 ## Import and prepare data
 
 7. On line 40 of `scorecard_analysis.qmd`, add the list of variable names (from column 6 in the data dictionary) as additional arguments to the `sc_select()` function. *Note that you should supply these names in lowercase.* Run the code chunk. 
-8. Check out the data frame, and note columns with many missing values. If the values are missing in more than 25% of rows, return to the data dictionary and select new columns. Re-run the code. 
+8. Check out the data frame, and note columns with many missing values. If the values are missing in more than 25% of rows, you have two options. If there is a discernible reason why that column has so few values (e.g. the variable only applies to private institutions), you may filter the data down to the rows that the variable applies to, and then check again whether the data is missing in more than 25% of rows. In this case, you would work with this smaller subset of data for the project. If you cannot discern a reason why that column as so few values, return to the data dictionary and select new columns. Re-run the code. 
 9. Factor your ordinal variable in the code chunk starting at line 44, using the `factor()` function. The `levels` you should supply as an argument will be listed in the `VALUES` column in the data dictionary, and the associated `labels` you should supply as an argument will be listed in the `LABELS` column of the data dictionary. I provided an example in the comments. Be sure to reference the help pages for the `factor()` function if you have questions!
 
 ## Design four data visualizations
 
-10. Create four data visualizations showcasing the survey findings - at least one univariate plot and at least one plot adding an additional variable to your previous univariate plot. Be sure to label your plots and consider the plot aesthetics.
+10. Create three data visualizations showcasing the survey findings - at least one univariate plot and at least two plots adding an additional variable to your previous univariate plot. Be sure to label your plots and consider the plot aesthetics. Across your three plots, you must use at least one numeric and at least one ordinal variable. 
 
 ## Write blog post
 
-11. In 400-500 words, you should write a blog post reporting on your visualization:
+11. In 400-500 words, you should write a blog post reporting on your visualizations:
   * Paragraph 1: Introduce the dataset, how the data was produced, and what you specifically will be visualizing in your plots. 
   * Paragraph 2: Report on findings from your visualizations.
     * For each plot, you should summarize at least one quantitative fact that we can extrapolate, **and** interpret that finding. (e.g. on this plot, we can see that ... This indicates that ...)
-    * You should also indicate how adding additional information to your univariate plot deepened your understanding of the relationship between these two variables. 
+    * You should also indicate how adding additional information to your univariate plot deepened your understanding of the relationship between the variables. 
   * Paragraph 3: Summarize the key takeaway from your analysis and describe at least one ethical concern we should consider when analyzing this data. As a reminder of our ethics framework for this course:
     * What assumptions and commitments informed the design of this dataset?
     * Who has had a say in data collection and analysis regarding this dataset? Who has been excluded?
@@ -64,27 +64,40 @@ In this mini-project, you will create at least four data visualizations of varia
 
 You will be evaluated on the extent to which your mini-project demonstrates fluency in the following course learning dimensions:
 
-* Tracing Data Provenance: 
+* Tracing Data Provenance (10 points)
   * Does your blog post detail how this dataset was produced?
   * Does your blog post detail the unit of observation in your dataset?
   * Does your blog post detail how the values in the variables you selected were measured?
-* Data Fundamentals
-  * Did you select at least one numeric and at least one ordinal variable?'
+* Data Fundamentals (10 points)
+  * Did you select at least one numeric and at least one ordinal variable?
   * Were you able to successfully factor your selected ordinal variable?
   * Have you selected appropriate plots based on the variable types present in the dataset?
-* Univariate Plotting
+* Univariate Plotting (10 points)
   * Have you produced at least one plot visualizing the values in a single variable in the dataset?
   * Have you detailed at least one quantitative finding, and at least one interpretation of that finding in the blog post?
-* Visualization Aesthetics
+  * Were your interpretations of the plot accurate?
+* Multivariate Plotting (10 points)
+  * Have you produced at least two plots visualizing the values in two variables in the dataset?
+  * Have you detailed at least one quantitative finding, and at least one interpretation of that finding in the blog post?
+  * Were your interpretations of the plots accurate?
+* Visualization Aesthetics (10 points)
   * Do you use visual cues effectively on the plot?
   * Are your axes set to an appropriate scale?
   * Are the values on your plot legible and clear?
-* Visualization Context
+* Visualization Context (10 points)
   * Are there titles and labels for all variables on your plot?
   * Do your titles and labels accurately identify the unit of observation, variables, filters, geographic context, and temporal context?
-* Multivariate Plotting
-  * Have you produced at least one plot visualizing the values in two variables in the dataset?
-  * Have you detailed at least one quantitative finding, and at least one interpretation of that finding in the blog post?
+* Data Ethics (10 points)
+  * Does your blog post demonstrate thoughtful consideration of the ethics of this data collection?
 
+Additionally the following will be factored into your grade:
+
+* All components of the assignment were complete (10 points)
+  * Did you complete the group contract, fill out the contributions statement, and meet the minimum word count?
+  * Was the assignment submitted as an HTML document rendered from Quarto?
+* Effectiveness of Evidence and Argumentation (20 points)
+  * Did you select variables that were appropriate to the argument that you developed in the blog post?
+  * Did the evidence that cited from your plots support the argument that developed in the blog post?
+ 
   
 
