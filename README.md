@@ -38,9 +38,9 @@ In this mini-project, you will create at least three data visualizations of vari
 
 ## Import and prepare data
 
-7. On line 40 of `scorecard_analysis.qmd`, add the list of variable names (from column 6 in the data dictionary) as additional arguments to the `sc_select()` function. *Note that you should supply these names in lowercase.* Run the code chunk. 
+7. On line 39 of `scorecard_analysis.qmd`, add the list of variable names (from column 6 in the data dictionary) as additional arguments to the `sc_select()` function. *Note that you should supply these names in lowercase.* Run the code chunk. 
 8. Check out the data frame, and note columns with many missing values. If the values are missing in more than 25% of rows, you have two options. If there is a discernible reason why that column has so few values (e.g. the variable only applies to private institutions), you may filter the data down to the rows that the variable applies to, and then check again whether the data is missing in more than 25% of rows. In this case, you would work with this smaller subset of data for the project. If you cannot discern a reason why that column as so few values, return to the data dictionary and select new columns. Re-run the code. 
-9. Factor your ordinal variable in the code chunk starting at line 44, using the `factor()` function. The `levels` you should supply as an argument will be listed in the `VALUES` column in the data dictionary, and the associated `labels` you should supply as an argument will be listed in the `LABELS` column of the data dictionary. I provided an example in the comments. Be sure to reference the help pages for the `factor()` function if you have questions!
+9. Factor your ordinal variable in the code chunk starting at line 43, using the `factor()` function. The `levels` you should supply as an argument will be listed in the `VALUES` column in the data dictionary, and the associated `labels` you should supply as an argument will be listed in the `LABELS` column of the data dictionary. I provided an example in the comments. Be sure to reference the help pages for the `factor()` function if you have questions!
 
 ## Design four data visualizations
 
