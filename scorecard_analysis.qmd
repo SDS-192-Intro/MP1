@@ -35,8 +35,7 @@ sc_key("FILL API KEY HERE")
 
 ```{r import}
 scorecard <- sc_init() %>%
-  sc_year(2022) %>%                 #Note how we are looking at only 2021 data here!
-  sc_filter(stabbr == "MA") %>%     #Note how we are looking at only Massachusetts data here!
+  sc_year(2022) %>%                 #Note how we are looking at only 2022 data here!
   sc_select(unitid, instnm) %>%
   sc_get()
 ```
@@ -66,14 +65,10 @@ scorecard <- sc_init() %>%
 # Create plot 2 here
 ```
 
-# Two Additional plots here
+# Additional plot here
 
 ```{r plot_3}
 # Create plot 3 here
-```
-
-```{r plot_4}
-# Create plot 4 here
 ```
 
 # Blog post
